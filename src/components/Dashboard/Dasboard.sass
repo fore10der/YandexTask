@@ -1,0 +1,84 @@
+.dashboard
+    &-title
+        margin-bottom: 10px
+        line-height: 1.2
+        font-size: 2.5rem
+        @media screen and (max-width: 480px)
+            font-size: 1.5rem
+        &_size
+            &_small
+                font-size: 1rem
+    &-spinner
+        z-index: 999
+        overflow: show
+        left: 50%
+        top: 200%
+    &-list
+        position: relative
+        table
+            table-layout: fixed
+            tr
+                height: 60px
+                @media screen and (max-width: 480px)
+                    font-size: 12px
+            th
+                text-align: center
+                vertical-align: middle !important
+            strong
+                color: red
+            th
+                &:nth-child(1)
+                    width: 20%
+                &:nth-child(2)
+                    width: 20%
+                &:nth-child(3)
+                    width: 20%
+                    @media screen and (max-width: 480px)
+                        width: 25%
+                &:nth-child(4)
+                    width: 25%
+                    @media screen and (max-width: 992px)
+                        width: 20%
+                    
+                &:nth-child(5)
+                    width: 15%
+                    @media screen and (max-width: 992px)
+                        width: 20%
+    &-noresult
+        height: 100px !important
+        border-bottom: 1px solid #dee2e6
+        span
+            font-size: 20px
+    &-form
+        position: sticky
+        top: 85px
+        left: 0
+        .form-group
+            display: flex
+        input[type="checkbox"]
+            position: static
+            margin-right: 3px
+        label
+            font-size: 14px
+            @media screen and (max-width: 768px)
+                font-size: 18px
+        div
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            align-items: center
+            @media screen and (max-width: 768px)
+                justify-content: left
+    &-error
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        height: 400px
+        padding: 2rem 1.25rem !important
+        @media screen and (max-width: 992px)
+            height: 300px
+        i
+            font-size: 120px
+        span, b
+            text-align: center
