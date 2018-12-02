@@ -50,8 +50,6 @@ export const getDeparturingFlights = () => async dispatch => {
         } 
     }))
 
-    console.log("ass")
-
     if (error){
         return dispatch({
             type: GOT_ERROR,

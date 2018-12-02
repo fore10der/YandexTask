@@ -30,7 +30,7 @@ export default class AppNavbar extends React.Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav navbar>
                     <NavItem>
-                    <NavLink className="nav-link" to='/departing_flights' active>Вылет</NavLink>
+                    <NavLink className="nav-link" to='/departing_flights'>Вылет</NavLink>
                     </NavItem>
                     <NavItem>
                     <NavLink className="nav-link" to='/arriving_flights'>Прилет</NavLink>
